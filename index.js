@@ -52,15 +52,8 @@ let currentIndex = 0;
 
 for (let index = 0; index < navItemList.length; index++) {
     navItemList[index].addEventListener("click", (item) => {
-        console.log("click");
         item.preventDefault();
-            
-        navItemList.forEach(element => {
-            element.classList.remove("active");
-        });
 
-        item.target.classList.add("active");
-        
         switchImage(index);
         swithPage(index);
 
@@ -71,12 +64,6 @@ for (let index = 0; index < navItemList.length; index++) {
 for (let index = 0; index < switchPageList.length; index++) {
     switchPageList[index].addEventListener("click", item => {
         item.preventDefault();
-
-        switchPageList.forEach(element => {
-            element.classList.add("rectangle-disable");
-        });
-
-        item.target.classList.remove("rectangle-disable");
 
         switchImage(index);
         swithPage(index);
