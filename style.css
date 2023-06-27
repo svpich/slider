@@ -1,0 +1,144 @@
+body {
+    background-color: #131313;
+    margin-top: 100px;
+    color: white;
+    font-size: 14px;
+    line-height: 27px;
+    font-family: "Nunito Sans";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1171px;
+    position: relative;
+    margin: auto;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "blank nav"
+    "description image";
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.nav > ul {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.nav li {
+    list-style: none;
+    margin-right: 55px;
+    font-size: 14px;
+}
+
+.nav-item {
+   color:rgba(255, 255, 255, 0.3);
+   padding-bottom: 10px;
+   font-family: "Yeseva One";
+   text-transform: uppercase;
+}
+
+.active {
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
+.image-wrapper {
+    grid-area: image;
+    padding-top: 30px;
+}
+
+.description-wrapper {
+    grid-area: description;
+    width: 442px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-wrapper {
+    display: flex;
+    width: 253px;
+    
+}
+
+.title {
+    color: #E3B873;
+    font-family: "Yeseva One";
+    text-transform: uppercase;
+}
+
+.title-wrapper h1 {
+    display: inline-block;
+    font-size: 27px;
+    line-height: 37.42px;
+    font-weight: 400;
+}
+
+.title-wrapper div {
+    position: relative;
+    top: 50px
+}
+
+.property-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.page-wrapper {
+    display: flex;
+    margin-top: 60px;
+
+}
+
+.page-wrapper__left-arrow {
+    margin-right: 20px;
+}
+
+.page-wrapper__right-arrow {
+    margin-left: 20px;
+}
+
+.page-wrapper__rectangle {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rectangle-disable {
+    opacity: 0.5;
+}
+
+@font-face {
+    /* правило. Подключение шрифта*/
+    font-family: "Nunito Sans";
+    src: url(./fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    /* правило. Подключение шрифта*/
+    font-family: "Yeseva One";
+    src: url(./fonts/YesevaOne-Regular.ttf);
+}
+
+#page-wrapper__left-arrow:hover {
+  cursor: pointer;
+}
+
+#page-wrapper__right-arrow:hover {
+    cursor: pointer;
+}
+
+.page-wrapper__rectangle:hover {
+    cursor: pointer;
+}
